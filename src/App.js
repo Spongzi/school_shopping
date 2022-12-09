@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider } from "react-router";
+import router from "@/router";
 
 function App() {
   return (
-    <div className="App">
-      根组件
-    </div>
+    <RouterProvider router={router}>
+      <div className="App">根组件</div>
+    </RouterProvider>
   );
 }
 
